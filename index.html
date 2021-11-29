@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <title> Music 24/7 | Home</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="header-content">
+      <div id="ctn-icon-search">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <div>
+      <input type="text" id="buscar" placeholder="¿Qué deseas buscar?">
+    </div>
+
+  </div>
+    </header>
+
+  
+    <div id="ctn-bars-search">
+      <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+  </div>
+
+  <div id="cover-ctn-search"></div>
+
+
+    <div class="main-container">
+      <div class="main-playing">
+        <h5 class="title">PLAYING NOW</h5>
+        
+        <div class="cover-container">
+         
+          <img id="cover-image" src="./caratulas/if.jpg" />
+    
+
+        </div>
+
+
+
+        <div class="data-song-container">
+          <h1 id="title-song">...</h1>
+          <p id="artist-song">...</p>
+        </div>
+
+ <div class="time-container">
+          <span class="time-left" id="CurrentSongTime"></span>
+          <span class="time-left" id="SongLength"></span>
+        </div>
+
+        <div class="progress-bar">
+          <input id="progress-bar" value="0" type="range" min="0" />
+        </div>
+
+        <div class="vol"> 
+         
+         
+        <input type="range" max="1" min="0" step="0.1" class="volumen">
+        </div>
+
+        
+
+  
+        
+      <div class="buttons-img1">
+        <div class="controls-container">
+          <img src="./img/33187223.png" alt="" class="icon" id="prev-btn" width="50" height="50">
+        </div>
+      </div>
+
+      <div class="buttons-img2"> 
+        <div class="controls-container">
+          <img src="./img/pause.png" alt="" class="icon" id="play-btn" width="61" height="63">
+        </div>
+      </div>
+
+      <div class="buttons-img3">
+        <div class="controls-container">
+          <img src="./img/3318722.png" alt="" class="icon" id="next-btn" width="50" height="50">
+        </div>
+      </div>
+
+      </div>
+      <div class="list-song-container" id="list-song-container"></div>
+    
+  
+
+    </div>
+
+    
+    <audio id="audio-playing" src="./canciones/R5 - If.mp3"></audio>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

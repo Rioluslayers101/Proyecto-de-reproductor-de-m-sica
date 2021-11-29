@@ -1,0 +1,205 @@
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #c2d6f0 ;
+    display: flexbox;
+  
+}
+#ctn-icon-search{
+  position: absolute;
+  left: 3% ;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#buscar{
+  text-align:left;
+  left: 5%;
+  position: absolute;
+  width: 25%;
+  background: #D3E1F8;
+  padding: 10px;
+  margin-top: 0.3em;
+}
+
+.main-container {
+  margin-top: 1.5em;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #D3E1F8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  .title{
+    font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 21px;
+   color: #9AA7C0;
+   margin-bottom: 1em;
+  }
+  
+  .main-playing,
+  .list-song-container {
+    width: 45rem;
+    height: 57rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 3rem;
+    background-color: #E7F0FD;
+    border-radius: 39px;
+
+  }
+  
+  .main-playing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cover-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .data-song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #79869E;
+    margin-bottom: -2em;  
+  }
+  .cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 4s;
+  }
+  
+  .list-item {
+    background-color: #CEDBF0;
+    display: flex;
+    margin-bottom: 1em;
+    color:#79869E;
+    margin-top: 1em;
+    border-radius: 39px;
+    
+  }
+  .list-item img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 115.5px;
+  }
+  .progress-bar {
+    width: 70%;
+    margin-top: 3em;
+    margin-bottom: 18em;
+    color: brown;
+  }
+  .progress-bar input {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .buttons-img1{
+    position: absolute;
+    width: 100px;
+    height: 101px;
+    left: 10%;
+    top: 80%;
+    border-radius: 100px;
+    text-align: center;
+    background: #D3E1F8;
+    margin-top: 5em;
+  }
+  .buttons-img2{
+   position: absolute;
+  width: 100px;
+  height: 101px;
+  left: 23.5%;
+  top: 80%;
+  border-radius: 100px; 
+  text-align: center;
+ background: #7D9FFF;
+ margin-top: 5em;
+  }
+.buttons-img3{
+  position: absolute;
+ width: 100px;
+ height: 101px;
+ left: 37.5%;
+ top: 80%;
+ border-radius: 100px;
+ text-align: center;
+background: #D3E1F8;
+margin-top: 5em;
+}
+.controls-container{
+  position: relative;
+  top: 20px;
+}
+.time-container{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: rgb( 167, 167, 167);
+   font-size: 12px;
+}
+.time-left{
+  margin-top: 0.3rem;
+  margin-bottom: -6em;
+  margin-left: 9.5em;
+  margin-right: 9em;
+  top: 50%;
+  color:#9AA7C0;
+}
+.vol{
+  position: absolute;
+  top: 78%;
+  left: 10.8%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.vol input {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
